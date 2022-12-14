@@ -15,6 +15,6 @@ import lombok.NoArgsConstructor;
 public class Person {
     @EmbeddedId
     private PersonalData personal_data;
-    private String phone_number;
-    private String city_of_living;
+    private String phoneNumber;
+    private String cityOfLiving;
 }
