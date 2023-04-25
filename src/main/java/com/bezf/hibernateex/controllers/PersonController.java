@@ -25,7 +25,7 @@ public class PersonController {
         return personService.save(person);
     }
 
-    @GetMapping("findById")
+    @GetMapping("findByPersonalData")
     public Optional<Person> findByPersonalData(@RequestParam("name") String name, @RequestParam("surname") String surname,
                                                @RequestParam("age") int age)
             throws PersonNotFoundException {
@@ -33,7 +33,7 @@ public class PersonController {
         return personService.findById(personalData);
     }
 
-    @DeleteMapping("delete")
+    @DeleteMapping("deleteByPersonalData")
     public void deleteByPersonalData(@RequestParam("name") String name, @RequestParam("surname") String surname,
                                      @RequestParam("age") int age) {
         var personalData = getPersonalData(name, surname, age);
