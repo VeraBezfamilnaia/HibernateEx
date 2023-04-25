@@ -26,17 +26,17 @@ public class PersonController {
     }
 
     @GetMapping("findById")
-    public Optional<Person> findById(@RequestParam("name") String name, @RequestParam("surname") String surname,
-                                     @RequestParam("age") int age)
+    public Optional<Person> findByPersonalData(@RequestParam("name") String name, @RequestParam("surname") String surname,
+                                               @RequestParam("age") int age)
             throws PersonNotFoundException {
         var personalData = getPersonalData(name, surname, age);
         return personService.findById(personalData);
     }
 
     @DeleteMapping("delete")
-    public void deleteById(@RequestParam("name") String name, @RequestParam("surname") String surname,
-                           @RequestParam("age") int age) {
-        PersonalData personalData = getPersonalData(name, surname, age);
+    public void deleteByPersonalData(@RequestParam("name") String name, @RequestParam("surname") String surname,
+                                     @RequestParam("age") int age) {
+        var personalData = getPersonalData(name, surname, age);
         personService.deleteById(personalData);
     }
 
