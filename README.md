@@ -1,8 +1,8 @@
 # HibernateEx
 
-## The purpose of the application
+## The purpose of the project
 
-The purpose of the application is the practice of using Hibernate, Liquibase, JpaRepositiry, Lombok on the example of performing various operations on the Person entity
+The purpose of the project is practice in working with Hibernate, Liquibase, JpaRepositiry.
 
 ## Usage example
 
