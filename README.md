@@ -2,7 +2,7 @@
 
 ## The purpose of the project
 
-The purpose of the project is practice in working with Hibernate, Liquibase, JpaRepositiry.
+The purpose of the project is practice in working with Hibernate, Liquibase, JpaRepositiry, Lombok.
 
 ## Usage example
 
